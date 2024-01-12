@@ -222,7 +222,7 @@ function Overview() {
                   Projects
                 </VuiTypography>
                 <VuiTypography color="text" variant="button" fontWeight="regular">
-                  Architects design houses
+                  Highlighted projects
                 </VuiTypography>
               </VuiBox>
               <Grid container spacing={3}>
