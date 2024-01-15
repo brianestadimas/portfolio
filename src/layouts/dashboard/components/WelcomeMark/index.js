@@ -18,7 +18,7 @@ const WelcomeMark = () => {
       <VuiBox height="100%" display="flex" flexDirection="column" justifyContent="space-between">
         <VuiBox>
           <VuiTypography color="text" variant="button" fontWeight="regular" mb="12px">
-            Hi there (Selamat Datang, Kia Ora, 안녕하세요) 👋,
+            Hi there (Selamat Datang, 안녕하세요) 👋,
           </VuiTypography>
           <VuiTypography color="white" variant="h3" fontWeight="bold" mb="18px">
             Brian Estadimas
