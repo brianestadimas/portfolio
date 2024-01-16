@@ -1,22 +1,4 @@
-/*!
 
-=========================================================
-* Vision UI Free React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/vision-ui-free-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com/)
-* Licensed under MIT (https://github.com/creativetimofficial/vision-ui-free-react/blob/master LICENSE.md)
-
-* Design and Coded by Simmmple & Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-
-// @mui material components
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Icon from "@mui/material/Icon";
@@ -26,6 +8,8 @@ import Link from "@mui/material/Link";
 import VuiButton from "components/VuiButton";
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
+import VuiAvatar from "components/VuiAvatar2";
+import github from "assets/images/github.svg";
 
 // Custom styles for the SidenavCard
 import { card, cardContent, cardIconBox, cardIcon } from "examples/Sidenav/styles/sidenavCard";
@@ -40,31 +24,31 @@ function SidenavCard({ color, ...rest }) {
   return (
     <Card sx={(theme) => card(theme, { miniSidenav })}>
       <CardContent sx={(theme) => cardContent(theme, { sidenavColor })}>
-        <VuiBox
-          bgColor="white"
-          width="2rem"
-          height="2rem"
-          borderRadius="md"
-          shadow="md"
-          mb={2}
-          sx={cardIconBox}
-        >
-          <Icon fontSize="medium" sx={(theme) => cardIcon(theme, { color })}>
-            star
-          </Icon>
-        </VuiBox>
+      <VuiAvatar
+          src={github}
+          alt="name"
+          size="sm"
+          style={{
+            marginLeft: "1px",
+            borderRadius: "12px", // Adjust the border radius as needed
+            padding: "3px", // Adjust the padding as needed
+            background: "white",
+            boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
+            boxSizing: "border-box",
+          }}
+        />
         <VuiBox lineHeight={1}>
           <VuiTypography variant="h6" color="white">
-            Need help?
+            Need codes?
           </VuiTypography>
           <VuiBox mb={1.825} mt={-1}>
             <VuiTypography variant="caption" color="white" fontWeight="regular">
-              Please check our docs
+              Please check my codes
             </VuiTypography>
           </VuiBox>
           <VuiButton
             component={Link}
-            href="https://www.creative-tim.com/learning-lab/react/quick-start/vision-ui-dashboard/"
+            href="https://github.com/brianestadimas?tab=repositories"
             target="_blank"
             rel="noreferrer"
             size="small"
@@ -86,7 +70,7 @@ function SidenavCard({ color, ...rest }) {
             })}
             fullWidth
           >
-            DOCUMENTATION
+            Visit My Github
           </VuiButton>
         </VuiBox>
       </CardContent>

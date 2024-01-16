@@ -1,20 +1,4 @@
-/*!
 
-=========================================================
-* Vision UI Free React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/vision-ui-free-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com/)
-* Licensed under MIT (https://github.com/creativetimofficial/vision-ui-free-react/blob/master LICENSE.md)
-
-* Design and Coded by Simmmple & Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 
 /** 
   All of the routes for the Vision UI Dashboard React are added here,
@@ -39,22 +23,20 @@
 */
 
 // Vision UI Dashboard React layouts
-import Dashboard from "layouts/dashboard";
 import Tables from "layouts/tables";
 import Billing from "layouts/billing";
-import RTL from "layouts/rtl";
+import Examples from "layouts/examples";
 import Profile from "layouts/profile";
-import SignIn from "layouts/authentication/sign-in";
-import SignUp from "layouts/authentication/sign-up";
 
 // Vision UI Dashboard React icons
-import { IoRocketSharp } from "react-icons/io5";
+import { IoRocketSharp, IoTabletLandscape, IoTelescope, IoMegaphone, IoNavigate, IoDocument } from "react-icons/io5";
 import { IoIosDocument } from "react-icons/io";
 import { BsFillPersonFill } from "react-icons/bs";
 import { IoBuild } from "react-icons/io5";
 import { BsCreditCardFill } from "react-icons/bs";
 import { IoStatsChart } from "react-icons/io5";
 import { IoHome } from "react-icons/io5";
+import Resume from "layouts/resume";
 
 const routes = [
 
@@ -72,8 +54,17 @@ const routes = [
     name: "Projects",
     key: "projects",
     route: "/projects",
-    icon: <BsCreditCardFill size="15px" color="inherit" />,
+    icon: <IoTelescope size="15px" color="inherit" />,
     component: Billing,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Resume",
+    key: "resume",
+    route: "/resume",
+    icon: <IoDocument size="15px" color="inherit" />,
+    component: Resume,
     noCollapse: true,
   },
   {
@@ -81,36 +72,18 @@ const routes = [
     name: "Contact Me",
     key: "tables",
     route: "/tables",
-    icon: <IoStatsChart size="15px" color="inherit" />,
+    icon: <IoNavigate size="15px" color="inherit" />,
     component: Tables,
     noCollapse: true,
   },
   { type: "title", title: "UI Collections", key: "account-pages" },
   {
     type: "collapse",
-    name: "Dashboard",
-    key: "dashboard",
-    route: "/dashboard",
-    icon: <IoHome size="15px" color="inherit" />,
-    component: Dashboard,
-    noCollapse: true,
-  },
-  {
-    type: "collapse",
-    name: "Fullstack",
-    key: "fullstack",
-    route: "/fullstack",
-    icon: <BsCreditCardFill size="15px" color="inherit" />,
-    component: Billing,
-    noCollapse: true,
-  },
-  {
-    type: "collapse",
-    name: "Machine Learning",
-    key: "billing",
-    route: "/billing",
-    icon: <BsCreditCardFill size="15px" color="inherit" />,
-    component: Billing,
+    name: "Examples",
+    key: "examples",
+    route: "/examples",
+    icon: <IoStatsChart size="15px" color="inherit" />,
+    component: Examples,
     noCollapse: true,
   },
 ];

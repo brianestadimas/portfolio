@@ -1,23 +1,4 @@
-/*!
 
-=========================================================
-* Vision UI Free React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/vision-ui-free-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com/)
-* Licensed under MIT (https://github.com/creativetimofficial/vision-ui-free-react/blob/master LICENSE.md)
-
-* Design and Coded by Simmmple & Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-
-// @mui material components
-// @mui icons
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -50,10 +31,10 @@ import CarInformations from "./components/CarInformations";
 import MiniStatisticsCard from "examples/Cards/StatisticsCards/MiniStatisticsCard";
 import WelcomeMark from "layouts/dashboard/components/WelcomeMark";
 import Projects from "layouts/dashboard/components/Projects";
-import { IoIosRocket } from "react-icons/io";
+import { IoLogoGithub } from "react-icons/io";
 import { IoGlobe } from "react-icons/io5";
 import { IoBuild } from "react-icons/io5";
-import { IoWallet } from "react-icons/io5";
+import { IoWallet, IoGolf,IoLaptop } from "react-icons/io5";
 import { IoDocumentText } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
 import SatisfactionRate from "layouts/dashboard/components/SatisfactionRate";
@@ -64,6 +45,16 @@ import { lineChartDataDashboard } from "layouts/profile/data/lineChartData";
 import { lineChartOptionsDashboard } from "layouts/profile/data/lineChartOptions";
 import { barChartDataDashboard } from "layouts/profile/data/barChartData";
 import { barChartOptionsDashboard } from "layouts/profile/data/barChartOptions";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+
+import certa from "assets/images/cert-a.jpg";
+import certb from "assets/images/cert-b.jpg";
+import certc from "assets/images/cert-c.jpg";
+import certd from "assets/images/cert-d.jpg";
+import certe from "assets/images/cert-e.jpg";
+import certf from "assets/images/cert-f.jpg";
+
 import VuiAvatar from "components/VuiAvatar2";
 import spring from "assets/images/spring.svg";
 import java from "assets/images/java.svg";
@@ -96,7 +87,7 @@ function Overview() {
                 title={{ text: "Interest", fontWeight: "regular" }}
                 count="Deep Learning"
                 percentage={{ color: "success", text: "+Certified" }}
-                icon={{ color: "info", component: <IoWallet size="22px" color="white" /> }}
+                icon={{ color: "info", component: <IoGolf size="22px" color="white" /> }}
               />
             </Grid>
             <Grid item xs={12} md={6} xl={3}>
@@ -120,7 +111,7 @@ function Overview() {
                 title={{ text: "Coding Experience" }}
                 count="5Y (Fullstack)"
                 percentage={{ color: "success", text: "+2Y (ML)" }}
-                icon={{ color: "info", component: <FaShoppingCart size="20px" color="white" /> }}
+                icon={{ color: "info", component: <IoLaptop size="20px" color="white" /> }}
               />
             </Grid>
           </Grid>
@@ -163,7 +154,7 @@ function Overview() {
         </VuiBox>
         <VuiBox mb={3}>
           <Grid container spacing={3}>
-            <Grid item xs={12} lg={6} xl={7}>
+            <Grid item xs={12} lg={6} xl={8}>
               <Card>
                 <VuiBox sx={{ height: "100%" }}>
                   <VuiTypography variant="lg" color="white" fontWeight="bold" mb="5px">
@@ -427,7 +418,7 @@ function Overview() {
                 </VuiBox>
               </Card>
             </Grid>
-            <Grid item xs={12} lg={6} xl={5}>
+            <Grid item xs={12} lg={6} xl={4}>
               <Card>
                 <VuiBox>
                   <VuiBox
@@ -442,10 +433,26 @@ function Overview() {
                       borderRadius: "20px",
                     }}
                   >
-                    <BarChart
-                      barChartData={barChartDataDashboard}
-                      barChartOptions={barChartOptionsDashboard}
-                    />
+                  <Carousel autoPlay interval="5000" transitionTime="1000" showThumbs={false} infiniteLoop>
+                    <div>
+                      <img src={certa} alt="" />
+                    </div>
+                    <div>
+                      <img src={certb} alt="" />
+                    </div>
+                    <div>
+                      <img src={certc} alt="" />
+                    </div>
+                    <div>
+                      <img src={certd} alt="" />
+                    </div>
+                    <div>
+                      <img src={certe} alt="" />
+                    </div>
+                    <div>
+                      <img src={certf} alt="" />
+                    </div>
+                  </Carousel>
                   </VuiBox>
                   <VuiTypography variant="lg" color="white" fontWeight="bold" mb="5px">
                     Active Users
@@ -496,14 +503,14 @@ function Overview() {
                           alignItems="center"
                           sx={{ borderRadius: "6px", width: "25px", height: "25px" }}
                         >
-                          <IoIosRocket color="#fff" size="12px" />
+                          <FaShoppingCart color="#fff" size="12px" />
                         </VuiBox>
                         <VuiTypography color="text" variant="button" fontWeight="medium">
-                          Clicks
+                          Value
                         </VuiTypography>
                       </Stack>
                       <VuiTypography color="white" variant="lg" fontWeight="bold" mb="8px">
-                        2,42M
+                        ~82K$
                       </VuiTypography>
                       <VuiProgress value={60} color="info" sx={{ background: "#2D2E5F" }} />
                     </Grid>
@@ -520,14 +527,14 @@ function Overview() {
                           alignItems="center"
                           sx={{ borderRadius: "6px", width: "25px", height: "25px" }}
                         >
-                          <FaShoppingCart color="#fff" size="12px" />
+                          <IoLogoGithub color="#fff" size="12px" />
                         </VuiBox>
                         <VuiTypography color="text" variant="button" fontWeight="medium">
-                          Sales
+                          Repo
                         </VuiTypography>
                       </Stack>
                       <VuiTypography color="white" variant="lg" fontWeight="bold" mb="8px">
-                        2,400$
+                        44+
                       </VuiTypography>
                       <VuiProgress value={60} color="info" sx={{ background: "#2D2E5F" }} />
                     </Grid>
@@ -547,11 +554,11 @@ function Overview() {
                           <IoBuild color="#fff" size="12px" />
                         </VuiBox>
                         <VuiTypography color="text" variant="button" fontWeight="medium">
-                          Items
+                          Stars
                         </VuiTypography>
                       </Stack>
                       <VuiTypography color="white" variant="lg" fontWeight="bold" mb="8px">
-                        320
+                        37+
                       </VuiTypography>
                       <VuiProgress value={60} color="info" sx={{ background: "#2D2E5F" }} />
                     </Grid>
@@ -590,10 +597,10 @@ function Overview() {
                       label: "VIEW ALL",
                     }}
                     authors={[
-                      { image: team1, name: "Elena Morison" },
-                      { image: team2, name: "Ryan Milly" },
-                      { image: team3, name: "Nick Daniel" },
-                      { image: team4, name: "Peterson" },
+                      { image: team1},
+                      { image: team2 },
+                      { image: team3 },
+                      { image: team4 },
                     ]}
                   />
                 </Grid>
@@ -610,10 +617,9 @@ function Overview() {
                       label: "VIEW ALL",
                     }}
                     authors={[
-                      { image: team3, name: "Nick Daniel" },
-                      { image: team4, name: "Peterson" },
-                      { image: team1, name: "Elena Morison" },
-                      { image: team2, name: "Ryan Milly" },
+                      { image: team3 },
+                      { image: team4 },
+                      { image: team1 },
                     ]}
                   />
                 </Grid>
@@ -630,10 +636,10 @@ function Overview() {
                       label: "VIEW ALL",
                     }}
                     authors={[
-                      { image: team4, name: "Peterson" },
-                      { image: team3, name: "Nick Daniel" },
-                      { image: team2, name: "Ryan Milly" },
-                      { image: team1, name: "Elena Morison" },
+                      { image: team4 },
+                      { image: team3 },
+                      { image: team2 },
+                      { image: team1 },
                     ]}
                   />
                 </Grid>
