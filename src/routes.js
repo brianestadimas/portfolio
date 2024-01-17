@@ -29,7 +29,7 @@ import Examples from "layouts/examples";
 import Profile from "layouts/profile";
 
 // Vision UI Dashboard React icons
-import { IoRocketSharp, IoTabletLandscape, IoTelescope, IoMegaphone, IoNavigate, IoDocument } from "react-icons/io5";
+import { IoRocketSharp, IoTabletLandscape, IoTelescope, IoMegaphone, IoNavigate, IoDocument, IoLogoIonitron } from "react-icons/io5";
 import { IoIosDocument } from "react-icons/io";
 import { BsFillPersonFill } from "react-icons/bs";
 import { IoBuild } from "react-icons/io5";
@@ -37,6 +37,7 @@ import { BsCreditCardFill } from "react-icons/bs";
 import { IoStatsChart } from "react-icons/io5";
 import { IoHome } from "react-icons/io5";
 import Resume from "layouts/resume";
+import Transformer from "layouts/transformer";
 
 const routes = [
 
@@ -74,6 +75,16 @@ const routes = [
     route: "/tables",
     icon: <IoNavigate size="15px" color="inherit" />,
     component: Tables,
+    noCollapse: true,
+  },
+  { type: "title", title: "Courses", key: "course-pages" },
+  {
+    type: "collapse",
+    name: "Vision Transformer",
+    key: "transformer",
+    route: "/transformer",
+    icon: <IoLogoIonitron size="15px" color="inherit" />,
+    component: Transformer,
     noCollapse: true,
   },
   { type: "title", title: "UI Collections", key: "account-pages" },
