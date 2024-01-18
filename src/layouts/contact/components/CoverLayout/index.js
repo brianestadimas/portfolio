@@ -12,7 +12,7 @@ import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import PageLayout from "examples/LayoutContainers/PageLayout";
 
 // Authentication layout components
-import Footer from "layouts/authentication/components/Footer";
+import Footer from "layouts/contact/components/Footer";
 
 // Vision UI Dashboard React theme functions
 import colors from "assets/theme/base/colors";
@@ -26,6 +26,8 @@ function CoverLayout({
   title,
   description,
   motto,
+  motto2, 
+  motto3,
   premotto,
   image,
   top,
@@ -45,8 +47,8 @@ function CoverLayout({
       <DefaultNavbar
         action={{
           type: "external",
-          route: "https://creative-tim.com/product/vision-ui-dashboard-pro-react",
-          label: "BUY NOW",
+          route: "https://www.linkedin.com/in/brianestadimas/",
+          label: "LinkedIn Contact",
         }}
       />
       <VuiBox
@@ -59,7 +61,7 @@ function CoverLayout({
         sx={({ breakpoints }) => ({
           overflow: "hidden",
           [breakpoints.down("xl")]: {
-            mr: "100px",
+            mr: "500px",
           },
           [breakpoints.down("lg")]: {
             display: "none",
@@ -99,6 +101,28 @@ function CoverLayout({
             sx={{ letterSpacing: "8px" }}
           >
             {motto}
+          </VuiTypography>
+          <VuiTypography
+            textAlign={cardContent ? "center" : "start"}
+            variant="h2"
+            fontWeight="bold"
+            color="logo"
+            mb="10px"
+            textGradient
+            sx={{ letterSpacing: "8px" }}
+          >
+            {motto2}
+          </VuiTypography>
+          <VuiTypography
+            textAlign={cardContent ? "center" : "start"}
+            variant="h4"
+            fontWeight="bold"
+            color="logo"
+            mb="10px"
+            textGradient
+            sx={{ letterSpacing: "8px" }}
+          >
+            {motto3}
           </VuiTypography>
         </VuiBox>
       </VuiBox>

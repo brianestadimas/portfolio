@@ -23,7 +23,7 @@
 */
 
 // Vision UI Dashboard React layouts
-import Tables from "layouts/tables";
+import Contact from "layouts/contact/sign-in";
 import Billing from "layouts/billing";
 import Examples from "layouts/examples";
 import Profile from "layouts/profile";
@@ -74,7 +74,7 @@ const routes = [
     key: "tables",
     route: "/tables",
     icon: <IoNavigate size="15px" color="inherit" />,
-    component: Tables,
+    component: Contact,
     noCollapse: true,
   },
   { type: "title", title: "Courses", key: "course-pages" },

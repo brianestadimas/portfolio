@@ -19,34 +19,46 @@ import palette from "assets/theme/base/colors";
 import borders from "assets/theme/base/borders";
 
 // Authentication layout components
-import CoverLayout from "layouts/authentication/components/CoverLayout";
+import CoverLayout from "layouts/contact/components/CoverLayout";
 
 // Images
 import bgSignIn from "assets/images/signInImage.png";
 
-function SignIn() {
+function Contact() {
   const [rememberMe, setRememberMe] = useState(true);
+  const [name, setName] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSetRememberMe = () => setRememberMe(!rememberMe);
+
+  const handleSendEmail = () => {
+    const mailtoLink = `mailto:brians.estadimas@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`My name is ${name}\n\n${message}`)}`;
+
+    // Open the default email client
+    window.location.href = mailtoLink;
+  };
 
   return (
     <CoverLayout
       title="Nice to see you!"
       color="white"
-      description="Enter your email and password to sign in"
-      premotto="INSPIRED BY THE FUTURE:"
-      motto="THE VISION UI DASHBOARD"
+      description="Let us keep in Touch, feel free to contact me."
+      premotto="INSPIRED BY THE FUTURE"
+      motto="It's not faith in technology,"
+      motto2="It is faith in people."
+      motto3="- Steve Jobs"
       image={bgSignIn}
     >
-      <VuiBox component="form" role="form">
+      <VuiBox component="form" role="form" ml={-10}>
         <VuiBox mb={2}>
           <VuiBox mb={1} ml={0.5}>
             <VuiTypography component="label" variant="button" color="white" fontWeight="medium">
-              Email
+              Name
             </VuiTypography>
           </VuiBox>
           <GradientBorder
-            minWidth="100%"
+            minWidth="130%"
             padding="1px"
             borderRadius={borders.borderRadius.lg}
             backgroundImage={radialGradient(
@@ -55,17 +67,18 @@ function SignIn() {
               palette.gradients.borderLight.angle
             )}
           >
-            <VuiInput type="email" placeholder="Your email..." fontWeight="500" />
+            <VuiInput type="text" placeholder="Your name..." fontWeight="500" 
+            onChange={(e) => setName(e.target.value)}/>
           </GradientBorder>
         </VuiBox>
         <VuiBox mb={2}>
           <VuiBox mb={1} ml={0.5}>
             <VuiTypography component="label" variant="button" color="white" fontWeight="medium">
-              Password
+              Subject
             </VuiTypography>
           </VuiBox>
           <GradientBorder
-            minWidth="100%"
+            minWidth="130%"
             borderRadius={borders.borderRadius.lg}
             padding="1px"
             backgroundImage={radialGradient(
@@ -75,14 +88,38 @@ function SignIn() {
             )}
           >
             <VuiInput
-              type="password"
-              placeholder="Your password..."
-              sx={({ typography: { size } }) => ({
-                fontSize: size.sm,
-              })}
+              type="text"
+              placeholder="Your subject..."
+              fontWeight="500"
+              onChange={(e) => setSubject(e.target.value)}
             />
           </GradientBorder>
         </VuiBox>
+        <VuiBox mb={2}>
+          <VuiBox mb={1} ml={0.5}>
+            <VuiTypography component="label" variant="button" color="white" fontWeight="medium">
+              Message
+            </VuiTypography>
+          </VuiBox>
+          <GradientBorder
+            minWidth="130%"
+            borderRadius={borders.borderRadius.lg}
+            padding="1px"
+            backgroundImage={radialGradient(
+              palette.gradients.borderLight.main,
+              palette.gradients.borderLight.state,
+              palette.gradients.borderLight.angle
+            )}
+          >
+            <VuiInput
+              type="text"
+              placeholder="Your message..."
+              fontWeight="500"
+              onChange={(e) => setMessage(e.target.value)}
+            />
+          </GradientBorder>
+        </VuiBox>
+        
         <VuiBox display="flex" alignItems="center">
           <VuiSwitch color="info" checked={rememberMe} onChange={handleSetRememberMe} />
           <VuiTypography
@@ -95,28 +132,14 @@ function SignIn() {
             &nbsp;&nbsp;&nbsp;&nbsp;Remember me
           </VuiTypography>
         </VuiBox>
-        <VuiBox mt={4} mb={1}>
-          <VuiButton color="info" fullWidth>
-            SIGN IN
+        <VuiBox mt={4} mb={1} ml={10}>
+          <VuiButton color="info" fullWidth onClick={handleSendEmail} >
+            SEND EMAIL
           </VuiButton>
-        </VuiBox>
-        <VuiBox mt={3} textAlign="center">
-          <VuiTypography variant="button" color="text" fontWeight="regular">
-            Don&apos;t have an account?{" "}
-            <VuiTypography
-              component={Link}
-              to="/authentication/sign-up"
-              variant="button"
-              color="white"
-              fontWeight="medium"
-            >
-              Sign up
-            </VuiTypography>
-          </VuiTypography>
         </VuiBox>
       </VuiBox>
     </CoverLayout>
   );
 }
 
-export default SignIn;
+export default Contact;

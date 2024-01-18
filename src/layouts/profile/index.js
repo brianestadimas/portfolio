@@ -1,7 +1,8 @@
 
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import Grid from "@mui/material/Grid";
 import team1 from "assets/images/avatar1.png";
 import team2 from "assets/images/avatar2.png";
@@ -130,18 +131,23 @@ function Overview() {
               }}
               social={[
                 {
-                  link: "https://www.facebook.com/CreativeTim/",
+                  link: "https://www.facebook.com/brian.e.a.9/",
                   icon: <FacebookIcon />,
                   color: "facebook",
                 },
                 {
-                  link: "https://twitter.com/creativetim",
-                  icon: <TwitterIcon />,
+                  link: "https://www.linkedin.com/in/brianestadimas/",
+                  icon: <LinkedInIcon />,
                   color: "twitter",
                 },
                 {
-                  link: "https://www.instagram.com/creativetimofficial/",
+                  link: "https://www.instagram.com/bstdimas/",
                   icon: <InstagramIcon />,
+                  color: "instagram",
+                },
+                {
+                  link: "https://github.com/brianestadimas",
+                  icon: <GitHubIcon />,
                   color: "instagram",
                 },
               ]}
