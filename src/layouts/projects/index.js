@@ -1,4 +1,3 @@
-
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -26,14 +25,14 @@ import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 // Overview page components
 import { IoIosApps, IoLogoGithub } from "react-icons/io";
 import { IoApps, IoBuild } from "react-icons/io5";
-import { IoWallet, IoGolf,IoLaptop } from "react-icons/io5";
+import { IoWallet, IoGolf, IoLaptop } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
 // Data
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import { Carousel } from "react-responsive-carousel";
 import colors from "assets/theme/base/colors";
 import { DeviceFrameset } from "react-device-frameset";
-import 'react-device-frameset/styles/marvel-devices.min.css'
+import "react-device-frameset/styles/marvel-devices.min.css";
 
 import VuiAvatar from "components/VuiAvatar2";
 import spring from "assets/images/spring.svg";
@@ -78,41 +77,50 @@ import p16 from "assets/images/projects1/16.png";
 function Projects() {
   const { gradients } = colors;
   const { cardContent } = gradients;
-  const imageList = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10,
-    p11, p12, p13, p14, p15, p16]
+  const imageList = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16];
+
+  const imageList2 = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16];
 
   return (
     <DashboardLayout>
-      <VuiBox mt={4}>
+      <VuiBox mt={10}>
         <Grid container spacing={3}>
           <Grid item xs={6} lg={7} xl={7}>
-              <VuiBox>
-                <VuiBox
-                  height="420px"
-                >
-                <div style={{ position: 'relative', top: -160, left: -200 }}>
+            <VuiBox>
+              <VuiBox height="420px">
+                <div style={{ position: "relative", top: -160, left: -200 }}>
                   <DeviceFrameset device="MacBook Pro" color="black" zoom="60%" width={1200}>
-                  <Carousel autoPlay interval="3000" transitionTime="1000" showThumbs={false} infiniteLoop>
-                    {imageList.map((imgSrc, index) => (
-                      <div key={index}>
-                        <img src={imgSrc} alt={`Project ${index + 1}`} />
-                      </div>
-                    ))}
-                  </Carousel>
+                    <Carousel
+                      autoPlay
+                      interval="3000"
+                      transitionTime="1000"
+                      showThumbs={false}
+                      infiniteLoop
+                    >
+                      {imageList.map((imgSrc, index) => (
+                        <div key={index}>
+                          <img src={imgSrc} alt={`Project ${index + 1}`} />
+                        </div>
+                      ))}
+                    </Carousel>
                     {/* <img src="https://res.cloudinary.com/yumyo/image/upload/v1647279421/media/folio/prj/rac/screens/home-1440.png" /> */}
                   </DeviceFrameset>
                 </div>
-                </VuiBox>
-                <Card>
+              </VuiBox>
+              <Card>
                 <VuiTypography variant="lg" color="white" fontWeight="bold" mb="5px">
                   Description
                 </VuiTypography>
                 <VuiBox display="flex" alignItems="center" mb="20px">
                   <VuiTypography variant="button" color="success" fontWeight="bold">
                     <VuiTypography variant="button" color="text" fontWeight="regular">
-                      This project leverages the power of Kibana and ElasticSearch to create a comprehensive monitoring system for servers and services and it is being used by ministry of planning and development. Featured
-                    </VuiTypography>
-                    {" "}service management, server management, database management, role management, risk management, rules, anomaly detection, threats, and maps application infrastructure.
+                      This project leverages the power of Kibana and ElasticSearch to create a
+                      comprehensive monitoring system for servers and services and it is being used
+                      by ministry of planning and development. Featured
+                    </VuiTypography>{" "}
+                    service management, server management, database management, role management,
+                    risk management, rules, anomaly detection, threats, and maps application
+                    infrastructure.
                   </VuiTypography>
                 </VuiBox>
                 <Grid container spacing="50px">
@@ -182,7 +190,7 @@ function Projects() {
                       </VuiTypography>
                     </Stack>
                     <VuiTypography color="white" variant="lg" fontWeight="" mb="8px">
-                      <div title="Kibana" style={{ display: 'inline-block', marginRight: '5px' }}>
+                      <div title="Kibana" style={{ display: "inline-block", marginRight: "5px" }}>
                         <VuiAvatar
                           src={kibana}
                           alt="name"
@@ -197,7 +205,10 @@ function Projects() {
                           }}
                         />
                       </div>
-                      <div title="Elastic Search" style={{ display: 'inline-block', marginRight: '5px' }}>
+                      <div
+                        title="Elastic Search"
+                        style={{ display: "inline-block", marginRight: "5px" }}
+                      >
                         <VuiAvatar
                           src={elastic}
                           alt="name"
@@ -212,7 +223,10 @@ function Projects() {
                           }}
                         />
                       </div>
-                      <div title="Java SpringBoots" style={{ display: 'inline-block', marginRight: '5px' }}>
+                      <div
+                        title="Java SpringBoots"
+                        style={{ display: "inline-block", marginRight: "5px" }}
+                      >
                         <VuiAvatar
                           src={spring}
                           alt="name"
@@ -227,7 +241,10 @@ function Projects() {
                           }}
                         />
                       </div>
-                      <div title="Swagger API" style={{ display: 'inline-block', marginRight: '5px' }}>
+                      <div
+                        title="Swagger API"
+                        style={{ display: "inline-block", marginRight: "5px" }}
+                      >
                         <VuiAvatar
                           src={swagger}
                           alt="name"
@@ -242,7 +259,7 @@ function Projects() {
                           }}
                         />
                       </div>
-                      <div title="NextJS" style={{ display: 'inline-block', marginRight: '5px' }}>
+                      <div title="NextJS" style={{ display: "inline-block", marginRight: "5px" }}>
                         <VuiAvatar
                           src={react}
                           alt="name"
@@ -257,7 +274,10 @@ function Projects() {
                           }}
                         />
                       </div>
-                      <div title="PostgreSQL" style={{ display: 'inline-block', marginRight: '5px' }}>
+                      <div
+                        title="PostgreSQL"
+                        style={{ display: "inline-block", marginRight: "5px" }}
+                      >
                         <VuiAvatar
                           src={postgres}
                           alt="name"
@@ -272,7 +292,7 @@ function Projects() {
                           }}
                         />
                       </div>
-                      <div title="Docker" style={{ display: 'inline-block', marginRight: '5px' }}>
+                      <div title="Docker" style={{ display: "inline-block", marginRight: "5px" }}>
                         <VuiAvatar
                           src={docker}
                           alt="name"
@@ -290,12 +310,265 @@ function Projects() {
                     </VuiTypography>
                   </Grid>
                 </Grid>
-                </Card>
+              </Card>
+            </VuiBox>
+          </Grid>
+        </Grid>
+      </VuiBox>
+      <VuiBox mt={10}>
+        <Grid container spacing={3}>
+          <Grid item xs={3} lg={3} xl={3} />
+          <Grid item xs={8} lg={8} xl={8}>
+            <VuiBox>
+              <VuiBox height="470px">
+                <Grid container spacing={3}>
+                  <Grid item xs={6} lg={6} xl={6}>
+                    <div style={{ position: "relative", top: -260, left: -400 }}>
+                      <DeviceFrameset device="iPad Mini" color="silver" zoom="40%" width={1500}>
+                        <Carousel
+                          autoPlay
+                          interval="3000"
+                          transitionTime="1000"
+                          showThumbs={false}
+                          infiniteLoop
+                        >
+                          {imageList2.map((imgSrc, index) => (
+                            <div key={index}>
+                              <img src={imgSrc} alt={`Project ${index + 1}`} />
+                            </div>
+                          ))}
+                        </Carousel>
+                      </DeviceFrameset>
+                    </div>
+                  </Grid>
+                  <Grid item xs={6} lg={6} xl={6}>
+                    <div style={{ position: "relative", top: -300, left: 90 }}>
+                      <DeviceFrameset device="iPhone 8" color="black" zoom="70%">
+                        <Carousel
+                          autoPlay
+                          interval="3000"
+                          transitionTime="1000"
+                          showThumbs={false}
+                          infiniteLoop
+                        >
+                          {imageList.map((imgSrc, index) => (
+                            <div key={index}>
+                              <img src={imgSrc} alt={`Project ${index + 1}`} />
+                            </div>
+                          ))}
+                        </Carousel>
+                      </DeviceFrameset>
+                    </div>
+                  </Grid>
+                </Grid>
               </VuiBox>
+              <Card>
+                <VuiTypography variant="lg" color="white" fontWeight="bold" mb="5px">
+                  Description
+                </VuiTypography>
+                <VuiBox display="flex" alignItems="center" mb="20px">
+                  <VuiTypography variant="button" color="success" fontWeight="bold">
+                    <VuiTypography variant="button" color="text" fontWeight="regular">
+                      This project leverages the power of Kibana and ElasticSearch to create a
+                      comprehensive monitoring system for servers and services and it is being used
+                      by ministry of planning and development. Featured
+                    </VuiTypography>{" "}
+                    service management, server management, database management, role management,
+                    risk management, rules, anomaly detection, threats, and maps application
+                    infrastructure.
+                  </VuiTypography>
+                </VuiBox>
+                <Grid container spacing="50px">
+                  <Grid item xs={6} md={3} lg={3}>
+                    <Stack
+                      direction="row"
+                      spacing={{ sm: "10px", xl: "4px", xxl: "10px" }}
+                      mb="6px"
+                    >
+                      <VuiBox
+                        bgColor="info"
+                        display="flex"
+                        justifyContent="center"
+                        alignItems="center"
+                        sx={{ borderRadius: "6px", width: "25px", height: "25px" }}
+                      >
+                        <IoWallet color="#fff" size="12px" />
+                      </VuiBox>
+                      <VuiTypography color="text" variant="button" fontWeight="medium">
+                        Client
+                      </VuiTypography>
+                    </Stack>
+                    <VuiTypography color="white" variant="lg" fontWeight="" mb="8px">
+                      BAPPENAS
+                    </VuiTypography>
+                  </Grid>
+                  <Grid item xs={6} md={3} lg={3}>
+                    <Stack
+                      direction="row"
+                      spacing={{ sm: "10px", xl: "4px", xxl: "10px" }}
+                      mb="6px"
+                    >
+                      <VuiBox
+                        bgColor="info"
+                        display="flex"
+                        justifyContent="center"
+                        alignItems="center"
+                        sx={{ borderRadius: "6px", width: "25px", height: "25px" }}
+                      >
+                        <IoApps color="#fff" size="12px" />
+                      </VuiBox>
+                      <VuiTypography color="text" variant="button" fontWeight="medium">
+                        Type
+                      </VuiTypography>
+                    </Stack>
+                    <VuiTypography color="white" variant="lg" fontWeight="" mb="8px">
+                      Monitoring
+                    </VuiTypography>
+                  </Grid>
+                  <Grid item xs={6} md={6} lg={6}>
+                    <Stack
+                      direction="row"
+                      spacing={{ sm: "10px", xl: "4px", xxl: "10px" }}
+                      mb="6px"
+                    >
+                      <VuiBox
+                        bgColor="info"
+                        display="flex"
+                        justifyContent="center"
+                        alignItems="center"
+                        sx={{ borderRadius: "6px", width: "25px", height: "25px" }}
+                      >
+                        <IoIosApps color="#fff" size="12px" />
+                      </VuiBox>
+                      <VuiTypography color="text" variant="button" fontWeight="medium">
+                        Stack
+                      </VuiTypography>
+                    </Stack>
+                    <VuiTypography color="white" variant="lg" fontWeight="" mb="8px">
+                      <div title="Kibana" style={{ display: "inline-block", marginRight: "5px" }}>
+                        <VuiAvatar
+                          src={kibana}
+                          alt="name"
+                          size="sm"
+                          style={{
+                            marginLeft: "1px",
+                            borderRadius: "12px", // Adjust the border radius as needed
+                            padding: "3px", // Adjust the padding as needed
+                            background: "white",
+                            boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
+                            boxSizing: "border-box",
+                          }}
+                        />
+                      </div>
+                      <div
+                        title="Elastic Search"
+                        style={{ display: "inline-block", marginRight: "5px" }}
+                      >
+                        <VuiAvatar
+                          src={elastic}
+                          alt="name"
+                          size="sm"
+                          style={{
+                            marginLeft: "1px",
+                            borderRadius: "12px", // Adjust the border radius as needed
+                            padding: "3px", // Adjust the padding as needed
+                            background: "white",
+                            boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
+                            boxSizing: "border-box",
+                          }}
+                        />
+                      </div>
+                      <div
+                        title="Java SpringBoots"
+                        style={{ display: "inline-block", marginRight: "5px" }}
+                      >
+                        <VuiAvatar
+                          src={spring}
+                          alt="name"
+                          size="sm"
+                          style={{
+                            marginLeft: "1px",
+                            borderRadius: "12px", // Adjust the border radius as needed
+                            padding: "3px", // Adjust the padding as needed
+                            background: "white",
+                            boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
+                            boxSizing: "border-box",
+                          }}
+                        />
+                      </div>
+                      <div
+                        title="Swagger API"
+                        style={{ display: "inline-block", marginRight: "5px" }}
+                      >
+                        <VuiAvatar
+                          src={swagger}
+                          alt="name"
+                          size="sm"
+                          style={{
+                            marginLeft: "1px",
+                            borderRadius: "12px", // Adjust the border radius as needed
+                            padding: "3px", // Adjust the padding as needed
+                            background: "white",
+                            boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
+                            boxSizing: "border-box",
+                          }}
+                        />
+                      </div>
+                      <div title="NextJS" style={{ display: "inline-block", marginRight: "5px" }}>
+                        <VuiAvatar
+                          src={react}
+                          alt="name"
+                          size="sm"
+                          style={{
+                            marginLeft: "1px",
+                            borderRadius: "12px", // Adjust the border radius as needed
+                            padding: "3px", // Adjust the padding as needed
+                            background: "white",
+                            boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
+                            boxSizing: "border-box",
+                          }}
+                        />
+                      </div>
+                      <div
+                        title="PostgreSQL"
+                        style={{ display: "inline-block", marginRight: "5px" }}
+                      >
+                        <VuiAvatar
+                          src={postgres}
+                          alt="name"
+                          size="sm"
+                          style={{
+                            marginLeft: "1px",
+                            borderRadius: "12px", // Adjust the border radius as needed
+                            padding: "3px", // Adjust the padding as needed
+                            background: "white",
+                            boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
+                            boxSizing: "border-box",
+                          }}
+                        />
+                      </div>
+                      <div title="Docker" style={{ display: "inline-block", marginRight: "5px" }}>
+                        <VuiAvatar
+                          src={docker}
+                          alt="name"
+                          size="sm"
+                          style={{
+                            marginLeft: "1px",
+                            borderRadius: "12px", // Adjust the border radius as needed
+                            padding: "3px", // Adjust the padding as needed
+                            background: "white",
+                            boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
+                            boxSizing: "border-box",
+                          }}
+                        />
+                      </div>
+                    </VuiTypography>
+                  </Grid>
+                </Grid>
+              </Card>
+            </VuiBox>
           </Grid>
-          </Grid>
-        </VuiBox>
-        <VuiBox my={3}>
+        </Grid>
       </VuiBox>
       <Footer />
     </DashboardLayout>
