@@ -384,6 +384,7 @@ function Overview() {
                           boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
                           boxSizing: "border-box",
                         }}
+                        title="websocket"
                       />
                     </Grid>
                     <Grid container item xs={1} lg={1} xl={1}>

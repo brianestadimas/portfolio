@@ -7,7 +7,7 @@ import VuiTypography from "components/VuiTypography";
 import VuiButton from "components/VuiButton";
 
 // Billing page components
-import Invoice from "layouts/billing/components/Invoice";
+import Invoice from "layouts/projects/components/Invoice";
 
 function Invoices() {
   return (

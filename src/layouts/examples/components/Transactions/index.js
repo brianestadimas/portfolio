@@ -8,7 +8,7 @@ import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 
 // Billing page components
-import Transaction from "layouts/billing/components/Transaction";
+import Transaction from "layouts/projects/components/Transaction";
 
 function Transactions() {
   return (

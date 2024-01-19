@@ -24,7 +24,7 @@
 
 // Vision UI Dashboard React layouts
 import Contact from "layouts/contact/sign-in";
-import Billing from "layouts/billing";
+import Projects from "layouts/projects";
 import Examples from "layouts/examples";
 import Profile from "layouts/profile";
 
@@ -56,7 +56,7 @@ const routes = [
     key: "projects",
     route: "/projects",
     icon: <IoTelescope size="15px" color="inherit" />,
-    component: Billing,
+    component: Projects,
     noCollapse: true,
   },
   {
