@@ -49,6 +49,10 @@ import { barChartOptionsDashboard } from "layouts/profile/data/barChartOptions";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
+import pro1 from "assets/images/pro1.jpg";
+import pro2 from "assets/images/pro2.png";
+import pro3 from "assets/images/pro3.png";
+
 import certa from "assets/images/cert-a.jpg";
 import certb from "assets/images/cert-b.jpg";
 import certc from "assets/images/cert-c.jpg";
@@ -593,13 +597,13 @@ function Overview() {
               <Grid container spacing={3}>
                 <Grid item xs={12} md={6} xl={4}>
                   <DefaultProjectCard
-                    image={profile1}
-                    label="project #2"
-                    title="modern"
-                    description="As Uber works through a huge amount of internal management turmoil."
+                    image={pro2}
+                    label="project #1"
+                    title="Artificial Intelligence"
+                    description="Collection of machine learning models with tensorflow and pytorch"
                     action={{
                       type: "internal",
-                      route: "/pages/profile/profile-overview",
+                      route: "/projects",
                       color: "white",
                       label: "VIEW ALL",
                     }}
@@ -613,13 +617,13 @@ function Overview() {
                 </Grid>
                 <Grid item xs={12} md={6} xl={4}>
                   <DefaultProjectCard
-                    image={profile2}
-                    label="project #1"
-                    title="scandinavian"
-                    description="Music is something that every person has his or her own specific opinion about."
+                    image={pro1}
+                    label="project #2"
+                    title="Barging Plan Simulation"
+                    description="AI for simulating coal and tug movements, for biggest mining company in Indonesia"
                     action={{
                       type: "internal",
-                      route: "/pages/profile/profile-overview",
+                      route: "/projects",
                       color: "white",
                       label: "VIEW ALL",
                     }}
@@ -632,13 +636,13 @@ function Overview() {
                 </Grid>
                 <Grid item xs={12} md={6} xl={4}>
                   <DefaultProjectCard
-                    image={profile3}
+                    image={pro3}
                     label="project #3"
-                    title="minimalist"
-                    description="Different people have different taste, and various types of music."
+                    title="Monitoring Systems"
+                    description="Performance monitoring, system health, risk management, and various KPI dashboards."
                     action={{
                       type: "internal",
-                      route: "/pages/profile/profile-overview",
+                      route: "/projects",
                       color: "white",
                       label: "VIEW ALL",
                     }}

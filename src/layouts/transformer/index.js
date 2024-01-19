@@ -56,7 +56,7 @@ function Transformer() {
               <MiniStatisticsCard
                 title={{ text: "Trends" }}
                 count="LLM"
-                percentage={{ color: "error", text: "(GPT-4, Gemini, Llama-2)" }}
+                percentage={{ color: "error", text: "(GPT-4, Gemini)" }}
                 icon={{ color: "info", component: <IoDocumentText size="22px" color="white" /> }}
               />
             </Grid>

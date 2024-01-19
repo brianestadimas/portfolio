@@ -23,7 +23,7 @@ function PlatformSettings() {
     <Card sx={{ minHeight: "490px", height: "100%" }}>
       <VuiBox mb="26px">
         <VuiTypography variant="lg" fontWeight="bold" color="white" textTransform="capitalize">
-          Small Survey 😉
+          Small Survey
         </VuiTypography>
       </VuiBox>
       <VuiBox lineHeight={1.25}>

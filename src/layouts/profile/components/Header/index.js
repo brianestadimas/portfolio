@@ -8,6 +8,7 @@ import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 // Images
 import burceMars from "assets/images/avatar-simmmple.png";
+import profile from "assets/images/profile.svg";
 // Vision UI Dashboard React base styles
 import breakpoints from "assets/theme/base/breakpoints";
 import VuiAvatar from "components/VuiAvatar";
@@ -89,7 +90,7 @@ function Header() {
             })}
           >
             <VuiAvatar
-              src={burceMars}
+              src={profile}
               alt="profile-image"
               variant="rounded"
               size="xl"
