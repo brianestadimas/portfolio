@@ -12,7 +12,7 @@ const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
 
-root.render(<BrowserRouter>
+root.render(<BrowserRouter basename="/profile">
   <VisionUIControllerProvider>
     <App />
   </VisionUIControllerProvider>
