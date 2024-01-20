@@ -8,13 +8,15 @@ import gif from "assets/images/cardimgfree.png";
 
 const WelcomeMark = () => {
   return (
-    <Card sx={() => ({
-      height: "340px",
-      py: "32px",
-      backgroundImage: `url(${gif})`,
-      backgroundSize: "cover",
-      backgroundPosition: "50%"
-    })}>
+    <Card
+      sx={() => ({
+        height: "340px",
+        py: "32px",
+        backgroundImage: `url(${gif})`,
+        backgroundSize: "cover",
+        backgroundPosition: "50%",
+      })}
+    >
       <VuiBox height="100%" display="flex" flexDirection="column" justifyContent="space-between">
         <VuiBox>
           <VuiTypography color="text" variant="button" fontWeight="regular" mb="12px">
@@ -28,6 +30,8 @@ const WelcomeMark = () => {
             <br />
             <br /> Glad to see you!
             <br /> Ask me anything.
+            <br />
+            <br /> For small Device, Please zoom out to 80% for better experience.
           </VuiTypography>
         </VuiBox>
         <VuiTypography
