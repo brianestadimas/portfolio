@@ -76,7 +76,7 @@ import windows from "assets/images/windows.svg";
 import restapi from "assets/images/restapi.svg";
 import websocket from "assets/images/websocket.svg";
 import tensorflow from "assets/images/tensorflow.svg";
-import pytorch from "assets/images/python.svg";
+import pytorch from "assets/images/pytorch.svg";
 
 function Overview() {
   const { gradients } = colors;
@@ -179,244 +179,278 @@ function Overview() {
                 </VuiBox>
                 <VuiBox display="flex" alignItems="center" mb="0px">
                   <Grid container item xs={2} lg={2} xl={2}>
-                    <VuiAvatar
-                      src={spring}
-                      alt="name"
-                      size="sm"
-                      style={{
-                        marginLeft: "15px",
-                        borderRadius: "12px", // Adjust the border radius as needed
-                        padding: "3px", // Adjust the padding as needed
-                        background: "white",
-                        boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
-                        boxSizing: "border-box",
-                      }}
-                    />
-                    <VuiAvatar
-                      src={java}
-                      alt="name"
-                      size="sm"
-                      style={{
-                        marginLeft: "1px",
-                        borderRadius: "12px", // Adjust the border radius as needed
-                        padding: "3px", // Adjust the padding as needed
-                        background: "white",
-                        boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
-                        boxSizing: "border-box",
-                      }}
-                    />
+                    <div title="SpringBoots MVC">
+                      <VuiAvatar
+                        src={spring}
+                        alt="name"
+                        size="sm"
+                        style={{
+                          marginLeft: "15px",
+                          borderRadius: "12px", // Adjust the border radius as needed
+                          padding: "3px", // Adjust the padding as needed
+                          background: "white",
+                          boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
+                          boxSizing: "border-box",
+                        }}
+                      />
+                    </div>
+                    <div title="Java">
+                      <VuiAvatar
+                        src={java}
+                        alt="name"
+                        size="sm"
+                        style={{
+                          marginLeft: "2px",
+                          borderRadius: "12px", // Adjust the border radius as needed
+                          padding: "3px", // Adjust the padding as needed
+                          background: "white",
+                          boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
+                          boxSizing: "border-box",
+                        }}
+                      />
+                    </div>
                   </Grid>
                   <Grid container item xs={2} lg={2} xl={2}>
-                    <VuiAvatar
-                      src={python}
-                      alt="name"
-                      size="sm"
-                      style={{
-                        marginLeft: "-40px",
-                        borderRadius: "12px", // Adjust the border radius as needed
-                        padding: "3px", // Adjust the padding as needed
-                        background: "white",
-                        boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
-                        boxSizing: "border-box",
-                      }}
-                    />
-                    <VuiAvatar
-                      src={flask}
-                      alt="name"
-                      size="sm"
-                      style={{
-                        marginLeft: "1px",
-                        borderRadius: "12px", // Adjust the border radius as needed
-                        padding: "3px", // Adjust the padding as needed
-                        background: "white",
-                        boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
-                        boxSizing: "border-box",
-                      }}
-                    />
-                    <VuiAvatar
-                      src={falcon}
-                      alt="name"
-                      size="sm"
-                      style={{
-                        marginLeft: "1px",
-                        borderRadius: "12px", // Adjust the border radius as needed
-                        padding: "3px", // Adjust the padding as needed
-                        background: "white",
-                        boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
-                        boxSizing: "border-box",
-                      }}
-                    />
+                    <div title="Python">
+                      <VuiAvatar
+                        src={python}
+                        alt="name"
+                        size="sm"
+                        style={{
+                          marginLeft: "-40px",
+                          borderRadius: "12px", // Adjust the border radius as needed
+                          padding: "3px", // Adjust the padding as needed
+                          background: "white",
+                          boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
+                          boxSizing: "border-box",
+                        }}
+                      />
+                    </div>
+                    <div title="Flask">
+                      <VuiAvatar
+                        src={flask}
+                        alt="name"
+                        size="sm"
+                        style={{
+                          marginLeft: "-6px",
+                          borderRadius: "12px", // Adjust the border radius as needed
+                          padding: "3px", // Adjust the padding as needed
+                          background: "white",
+                          boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
+                          boxSizing: "border-box",
+                        }}
+                      />
+                    </div>
+                    <div title="Falcon">
+                      <VuiAvatar
+                        src={falcon}
+                        alt="name"
+                        size="sm"
+                        style={{
+                          marginLeft: "2px",
+                          borderRadius: "12px", // Adjust the border radius as needed
+                          padding: "3px", // Adjust the padding as needed
+                          background: "white",
+                          boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
+                          boxSizing: "border-box",
+                        }}
+                      />
+                    </div>
                   </Grid>
                   <Grid container item xs={1} lg={1} xl={1}>
-                    <VuiAvatar
-                      src={nextjs}
-                      alt="name"
-                      size="sm"
-                      style={{
-                        marginLeft: "-65px",
-                        borderRadius: "12px", // Adjust the border radius as needed
-                        padding: "3px", // Adjust the padding as needed
-                        background: "white",
-                        boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
-                        boxSizing: "border-box",
-                      }}
-                    />
-                    <VuiAvatar
-                      src={react}
-                      alt="name"
-                      size="sm"
-                      style={{
-                        marginLeft: "1px",
-                        borderRadius: "12px", // Adjust the border radius as needed
-                        padding: "3px", // Adjust the padding as needed
-                        background: "white",
-                        boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
-                        boxSizing: "border-box",
-                      }}
-                    />
+                    <div title="NextJS">
+                      <VuiAvatar
+                        src={nextjs}
+                        alt="name"
+                        size="sm"
+                        style={{
+                          marginLeft: "-75px",
+                          borderRadius: "12px", // Adjust the border radius as needed
+                          padding: "3px", // Adjust the padding as needed
+                          background: "white",
+                          boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
+                          boxSizing: "border-box",
+                        }}
+                      />
+                    </div>
+                    <div title="ReactJS">
+                      <VuiAvatar
+                        src={react}
+                        alt="name"
+                        size="sm"
+                        style={{
+                          marginLeft: "-44px",
+                          borderRadius: "12px", // Adjust the border radius as needed
+                          padding: "3px", // Adjust the padding as needed
+                          background: "white",
+                          boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
+                          boxSizing: "border-box",
+                        }}
+                      />
+                    </div>
                   </Grid>
                   <Grid container item xs={1} lg={1} xl={1}>
-                    <VuiAvatar
-                      src={flutter}
-                      alt="name"
-                      size="sm"
-                      style={{
-                        marginLeft: "-45px",
-                        borderRadius: "12px", // Adjust the border radius as needed
-                        padding: "3px", // Adjust the padding as needed
-                        background: "white",
-                        boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
-                        boxSizing: "border-box",
-                      }}
-                    />
+                    <div title="Flutter">
+                      <VuiAvatar
+                        src={flutter}
+                        alt="name"
+                        size="sm"
+                        style={{
+                          marginLeft: "-45px",
+                          borderRadius: "12px", // Adjust the border radius as needed
+                          padding: "3px", // Adjust the padding as needed
+                          background: "white",
+                          boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
+                          boxSizing: "border-box",
+                        }}
+                      />
+                    </div>
                   </Grid>
                   <Grid container item xs={1} lg={1} xl={1}>
-                    <VuiAvatar
-                      src={gitlab}
-                      alt="name"
-                      size="sm"
-                      style={{
-                        marginLeft: "-25px",
-                        borderRadius: "12px", // Adjust the border radius as needed
-                        padding: "3px", // Adjust the padding as needed
-                        background: "white",
-                        boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
-                        boxSizing: "border-box",
-                      }}
-                    />
-                    <VuiAvatar
-                      src={github}
-                      alt="name"
-                      size="sm"
-                      style={{
-                        marginLeft: "1px",
-                        borderRadius: "12px", // Adjust the border radius as needed
-                        padding: "3px", // Adjust the padding as needed
-                        background: "white",
-                        boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
-                        boxSizing: "border-box",
-                      }}
-                    />
+                    <div title="GitLab">
+                      <VuiAvatar
+                        src={gitlab}
+                        alt="name"
+                        size="sm"
+                        style={{
+                          marginLeft: "-25px",
+                          borderRadius: "12px", // Adjust the border radius as needed
+                          padding: "3px", // Adjust the padding as needed
+                          background: "white",
+                          boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
+                          boxSizing: "border-box",
+                        }}
+                      />
+                    </div>
+                    <div title="GitHub">
+                      <VuiAvatar
+                        src={github}
+                        alt="name"
+                        size="sm"
+                        style={{
+                          marginLeft: "1px",
+                          borderRadius: "12px", // Adjust the border radius as needed
+                          padding: "3px", // Adjust the padding as needed
+                          background: "white",
+                          boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
+                          boxSizing: "border-box",
+                        }}
+                      />
+                    </div>
                   </Grid>
                   <Grid container item xs={1} lg={1} xl={1}>
-                    <VuiAvatar
-                      src={docker}
-                      alt="name"
-                      size="sm"
-                      style={{
-                        marginLeft: "15px",
-                        borderRadius: "12px", // Adjust the border radius as needed
-                        padding: "3px", // Adjust the padding as needed
-                        background: "white",
-                        boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
-                        boxSizing: "border-box",
-                      }}
-                    />
+                    <div title="Docker">
+                      <VuiAvatar
+                        src={docker}
+                        alt="name"
+                        size="sm"
+                        style={{
+                          marginLeft: "15px",
+                          borderRadius: "12px", // Adjust the border radius as needed
+                          padding: "3px", // Adjust the padding as needed
+                          background: "white",
+                          boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
+                          boxSizing: "border-box",
+                        }}
+                      />
+                    </div>
                   </Grid>
                   <Grid container item xs={2} lg={2} xl={2}>
-                    <VuiAvatar
-                      src={ubuntu}
-                      alt="name"
-                      size="sm"
-                      style={{
-                        marginLeft: "30px",
-                        borderRadius: "12px", // Adjust the border radius as needed
-                        padding: "3px", // Adjust the padding as needed
-                        background: "white",
-                        boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
-                        boxSizing: "border-box",
-                      }}
-                    />
-                    <VuiAvatar
-                      src={windows}
-                      alt="name"
-                      size="sm"
-                      style={{
-                        marginLeft: "1px",
-                        borderRadius: "12px", // Adjust the border radius as needed
-                        padding: "3px", // Adjust the padding as needed
-                        background: "white",
-                        boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
-                        boxSizing: "border-box",
-                      }}
-                    />
+                    <div title="Ubuntu">
+                      <VuiAvatar
+                        src={ubuntu}
+                        alt="name"
+                        size="sm"
+                        style={{
+                          marginLeft: "30px",
+                          borderRadius: "12px", // Adjust the border radius as needed
+                          padding: "3px", // Adjust the padding as needed
+                          background: "white",
+                          boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
+                          boxSizing: "border-box",
+                        }}
+                      />
+                    </div>
+                    <div title="Windows">
+                      <VuiAvatar
+                        src={windows}
+                        alt="name"
+                        size="sm"
+                        style={{
+                          marginLeft: "1px",
+                          borderRadius: "12px", // Adjust the border radius as needed
+                          padding: "3px", // Adjust the padding as needed
+                          background: "white",
+                          boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
+                          boxSizing: "border-box",
+                        }}
+                      />
+                    </div>
                   </Grid>
                   <Grid container item xs={1} lg={1} xl={1}>
-                    <VuiAvatar
-                      src={restapi}
-                      alt="name"
-                      size="sm"
-                      style={{
-                        marginLeft: "-10px",
-                        borderRadius: "12px", // Adjust the border radius as needed
-                        padding: "3px", // Adjust the padding as needed
-                        background: "white",
-                        boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
-                        boxSizing: "border-box",
-                      }}
-                    />
-                    <VuiAvatar
-                      src={websocket}
-                      alt="name"
-                      size="sm"
-                      style={{
-                        marginLeft: "1px",
-                        borderRadius: "12px", // Adjust the border radius as needed
-                        padding: "3px", // Adjust the padding as needed
-                        background: "white",
-                        boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
-                        boxSizing: "border-box",
-                      }}
-                      title="websocket"
-                    />
+                    <div title="Rest API">
+                      <VuiAvatar
+                        src={restapi}
+                        alt="name"
+                        size="sm"
+                        style={{
+                          marginLeft: "-10px",
+                          borderRadius: "12px", // Adjust the border radius as needed
+                          padding: "3px", // Adjust the padding as needed
+                          background: "white",
+                          boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
+                          boxSizing: "border-box",
+                        }}
+                      />
+                    </div>
+                    <div title="Websocket">
+                      <VuiAvatar
+                        src={websocket}
+                        alt="name"
+                        size="sm"
+                        style={{
+                          marginLeft: "1px",
+                          borderRadius: "12px", // Adjust the border radius as needed
+                          padding: "3px", // Adjust the padding as needed
+                          background: "white",
+                          boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
+                          boxSizing: "border-box",
+                        }}
+                        title="websocket"
+                      />
+                    </div>
                   </Grid>
                   <Grid container item xs={1} lg={1} xl={1}>
-                    <VuiAvatar
-                      src={tensorflow}
-                      alt="name"
-                      size="sm"
-                      style={{
-                        marginLeft: "0px",
-                        borderRadius: "12px", // Adjust the border radius as needed
-                        padding: "3px", // Adjust the padding as needed
-                        background: "white",
-                        boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
-                        boxSizing: "border-box",
-                      }}
-                    />
-                    <VuiAvatar
-                      src={pytorch}
-                      alt="name"
-                      size="sm"
-                      style={{
-                        marginLeft: "1px",
-                        borderRadius: "12px", // Adjust the border radius as needed
-                        padding: "3px", // Adjust the padding as needed
-                        background: "white",
-                        boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
-                        boxSizing: "border-box",
-                      }}
-                    />
+                    <div title="Tensorflow-Keras">
+                      <VuiAvatar
+                        src={tensorflow}
+                        alt="name"
+                        size="sm"
+                        style={{
+                          marginLeft: "0px",
+                          borderRadius: "12px", // Adjust the border radius as needed
+                          padding: "3px", // Adjust the padding as needed
+                          background: "white",
+                          boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
+                          boxSizing: "border-box",
+                        }}
+                      />
+                    </div>
+                    <div title="PyTorch">
+                      <VuiAvatar
+                        src={pytorch}
+                        alt="name"
+                        size="sm"
+                        style={{
+                          marginLeft: "1px",
+                          borderRadius: "12px", // Adjust the border radius as needed
+                          padding: "3px", // Adjust the padding as needed
+                          background: "white",
+                          boxShadow: "0 0 10px rgba(173, 216, 230, 0.5)", // Neon outer line (adjust color and size as needed)
+                          boxSizing: "border-box",
+                        }}
+                      />
+                    </div>
                   </Grid>
                 </VuiBox>
                 <VuiBox sx={{ height: "310px" }}>

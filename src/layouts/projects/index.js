@@ -414,14 +414,22 @@ function Projects() {
                 <VuiBox display="flex" alignItems="center" mb="20px">
                   <VuiTypography variant="button" color="success" fontWeight="bold">
                     <VuiTypography variant="button" color="text" fontWeight="regular">
-                    This microservice project aims to develop a comprehensive barging plan simulation that incorporates deep learning techniques to enhance the 
-                    efficiency and economic viability of transporting coal, for biggest coal mining company in Indonesia. By integrating real-time data on coal stock prices, 
-                    weather conditions, mining processes, and route considerations, the simulation and dashboard provide an advanced decision-making 
-                    tool for optimizing the movement of tugboats, ports, mother vessels, and barges. The deep learning model analyze historical and current data to predict the most effective route, taking into
-                    account the fluctuating coal stock prices, ensuring cost-effectiveness and maximizing profitability. The project worth millions of dollars, featured 
+                      This microservice project aims to develop a comprehensive barging plan
+                      simulation that incorporates deep learning techniques to enhance the
+                      efficiency and economic viability of transporting coal, for biggest coal
+                      mining company in Indonesia. By integrating real-time data on coal stock
+                      prices, weather conditions, mining processes, and route considerations, the
+                      simulation and dashboard provide an advanced decision-making tool for
+                      optimizing the movement of tugboats, ports, mother vessels, and barges. The
+                      deep learning model analyze historical and current data to predict the most
+                      effective route, taking into account the fluctuating coal stock prices,
+                      ensuring cost-effectiveness and maximizing profitability. The project worth
+                      millions of dollars, featured
                     </VuiTypography>{" "}
-                    tug, barge, floating crane managements, route optimization, mother vessel management, port management, traffic controller,
-                    weather forecast, variable & constant monitoring, dashboard, cycle time, loading, sailing, finishing time management, and timeline simulation.
+                    tug, barge, floating crane managements, route optimization, mother vessel
+                    management, port management, traffic controller, weather forecast, variable &
+                    constant monitoring, dashboard, cycle time, loading, sailing, finishing time
+                    management, and timeline simulation.
                   </VuiTypography>
                 </VuiBox>
                 <Grid container spacing="50px">
@@ -506,10 +514,7 @@ function Projects() {
                           }}
                         />
                       </div>
-                      <div
-                        title="Flask"
-                        style={{ display: "inline-block", marginRight: "5px" }}
-                      >
+                      <div title="Flask" style={{ display: "inline-block", marginRight: "5px" }}>
                         <VuiAvatar
                           src={flask}
                           alt="name"
@@ -575,10 +580,7 @@ function Projects() {
                           }}
                         />
                       </div>
-                      <div
-                        title="Tableau"
-                        style={{ display: "inline-block", marginRight: "5px" }}
-                      >
+                      <div title="Tableau" style={{ display: "inline-block", marginRight: "5px" }}>
                         <VuiAvatar
                           src={tableau}
                           alt="name"
@@ -616,7 +618,7 @@ function Projects() {
           </Grid>
         </Grid>
       </VuiBox>
-      
+
       <VuiBox mt={10}>
         <Grid container spacing={3}>
           <Grid item xs={7} lg={7} xl={7}>
@@ -637,7 +639,7 @@ function Projects() {
                         </div>
                       ))}
                     </Carousel>
-                     </DeviceFrameset>
+                  </DeviceFrameset>
                 </div>
               </VuiBox>
               <Card>
@@ -647,11 +649,12 @@ function Projects() {
                 <VuiBox display="flex" alignItems="center" mb="20px">
                   <VuiTypography variant="button" color="success" fontWeight="bold">
                     <VuiTypography variant="button" color="text" fontWeight="regular">
-                      Human resource and customer relationship management project, including systemize recruitment for outsourcing. 
-                      Ultimately, the project seeks to improve resource allocation and reduce administrative burdens.
-                      Featured{" "}
+                      Human resource and customer relationship management project, including
+                      systemize recruitment for outsourcing. Ultimately, the project seeks to
+                      improve resource allocation and reduce administrative burdens. Featured{" "}
                     </VuiTypography>
-                    performance tracking, presence management, client management, assignment, payroll, candidate sourcing, assessment, and onboarding, 
+                    performance tracking, presence management, client management, assignment,
+                    payroll, candidate sourcing, assessment, and onboarding,
                   </VuiTypography>
                 </VuiBox>
                 <Grid container spacing="50px">
@@ -721,10 +724,7 @@ function Projects() {
                       </VuiTypography>
                     </Stack>
                     <VuiTypography color="white" variant="lg" fontWeight="" mb="8px">
-                      <div
-                        title="Java"
-                        style={{ display: "inline-block", marginRight: "5px" }}
-                      >
+                      <div title="Java" style={{ display: "inline-block", marginRight: "5px" }}>
                         <VuiAvatar
                           src={java}
                           alt="name"
@@ -740,7 +740,7 @@ function Projects() {
                         />
                       </div>
                       <div
-                        title="Java SpringBoots MVC"
+                        title="Spring MVC"
                         style={{ display: "inline-block", marginRight: "5px" }}
                       >
                         <VuiAvatar
@@ -757,10 +757,7 @@ function Projects() {
                           }}
                         />
                       </div>
-                      <div
-                        title="MySQL"
-                        style={{ display: "inline-block", marginRight: "5px" }}
-                      >
+                      <div title="MySQL" style={{ display: "inline-block", marginRight: "5px" }}>
                         <VuiAvatar
                           src={mysql}
                           alt="name"
@@ -786,9 +783,9 @@ function Projects() {
 
       <VuiBox mt={10}>
         <Grid container spacing={3}>
-        <Grid item xs={4} lg={4} xl={4} />
-        <Grid item xs={2} lg={2} xl={2}>
-        <VuiBox>
+          <Grid item xs={4} lg={4} xl={4} />
+          <Grid item xs={2} lg={2} xl={2}>
+            <VuiBox>
               <VuiBox height="500px">
                 <div style={{ position: "relative", top: -140, left: -120 }}>
                   <DeviceFrameset device="Galaxy Note 8" color="black" zoom="63%">
@@ -809,14 +806,14 @@ function Projects() {
                 </div>
               </VuiBox>
             </VuiBox>
-        </Grid>
+          </Grid>
           <Grid item xs={6} lg={6} xl={6}>
             <VuiBox>
               <VuiBox height="500px">
                 <div style={{ position: "relative", top: -240, left: -100 }}>
                   <DeviceFrameset device="iPad Mini" color="black" zoom="53%" width={600}>
-                      <img src={s6} alt="" />
-                    </DeviceFrameset>
+                    <img src={s6} alt="" />
+                  </DeviceFrameset>
                 </div>
               </VuiBox>
               <Card>
@@ -826,11 +823,12 @@ function Projects() {
                 <VuiBox display="flex" alignItems="center" mb="20px">
                   <VuiTypography variant="button" color="success" fontWeight="bold">
                     <VuiTypography variant="button" color="text" fontWeight="regular">
-                      Build financial applications from the scratch, which includes payment, banking, bills, and others as well as 
-                      improve existing insurance application, partner with many insurance companies.
-                      Featured{" "}
+                      Build financial applications from the scratch, which includes payment,
+                      banking, bills, and others as well as improve existing insurance application,
+                      partner with many insurance companies. Featured{" "}
                     </VuiTypography>
-                    salary advance, personal accident insurance, outpatient insurance, P2P lending, API with banking, virtual account, and dashboard.
+                    salary advance, personal accident insurance, outpatient insurance, P2P lending,
+                    API with banking, virtual account, and dashboard.
                   </VuiTypography>
                 </VuiBox>
                 <Grid container spacing="50px">
@@ -918,10 +916,7 @@ function Projects() {
                           }}
                         />
                       </div>
-                      <div
-                        title="ReactJS"
-                        style={{ display: "inline-block", marginRight: "5px" }}
-                      >
+                      <div title="ReactJS" style={{ display: "inline-block", marginRight: "5px" }}>
                         <VuiAvatar
                           src={react}
                           alt="name"
@@ -972,10 +967,7 @@ function Projects() {
                           }}
                         />
                       </div>
-                      <div
-                        title="Rest API"
-                        style={{ display: "inline-block", marginRight: "5px" }}
-                      >
+                      <div title="Rest API" style={{ display: "inline-block", marginRight: "5px" }}>
                         <VuiAvatar
                           src={restapi}
                           alt="name"
@@ -1030,9 +1022,11 @@ function Projects() {
                 <VuiBox display="flex" alignItems="center" mb="20px">
                   <VuiTypography variant="button" color="success" fontWeight="bold">
                     <VuiTypography variant="button" color="text" fontWeight="regular">
-                      Develop KPI dashboard for top-level management for revenue assurance division. Featured
+                      Develop KPI dashboard for top-level management for revenue assurance division.
+                      Featured
                     </VuiTypography>{" "}
-                    reconcile input, lead time management, tower management, PO, KPI and overdue management.
+                    reconcile input, lead time management, tower management, PO, KPI and overdue
+                    management.
                   </VuiTypography>
                 </VuiBox>
                 <Grid container spacing="50px">
@@ -1102,10 +1096,7 @@ function Projects() {
                       </VuiTypography>
                     </Stack>
                     <VuiTypography color="white" variant="lg" fontWeight="" mb="8px">
-                      <div
-                        title="ReactJS"
-                        style={{ display: "inline-block", marginRight: "5px" }}
-                      >
+                      <div title="ReactJS" style={{ display: "inline-block", marginRight: "5px" }}>
                         <VuiAvatar
                           src={react}
                           alt="name"
@@ -1185,11 +1176,12 @@ function Projects() {
                 </VuiTypography>
                 <VuiBox display="flex" alignItems="center" mb="20px">
                   <VuiTypography variant="button" color="success" fontWeight="bold">
-                  <VuiTypography variant="button" color="text" fontWeight="regular">
-                      Collection of my machine learning models like face mask detection, brain tumour detection, wind turbine prediction, finetuned diffusion model. 
-                      Featured 
+                    <VuiTypography variant="button" color="text" fontWeight="regular">
+                      Collection of my machine learning models like face mask detection, brain
+                      tumour detection, wind turbine prediction, finetuned diffusion model. Featured
                     </VuiTypography>{" "}
-                    computer vision (object detection, image classification, image segmentation) projects and LLM model.
+                    computer vision (object detection, image classification, image segmentation)
+                    projects and LLM model.
                   </VuiTypography>
                 </VuiBox>
                 <Grid container spacing="50px">
@@ -1307,10 +1299,7 @@ function Projects() {
                           }}
                         />
                       </div>
-                      <div
-                        title="Flutter"
-                        style={{ display: "inline-block", marginRight: "5px" }}
-                      >
+                      <div title="Flutter" style={{ display: "inline-block", marginRight: "5px" }}>
                         <VuiAvatar
                           src={flutter}
                           alt="name"
